@@ -6,7 +6,7 @@ const swiper = new Swiper(".swiper", {
   },
   breakpoints: {
     360: {
-      slidesPerView: 2, // Em telas de 360px até 768px, exibe 3 slides
+      slidesPerView: 2, // Em telas de 360px até 768px, exibe 2 slides
       spaceBetween: 10,
     },
     769: {

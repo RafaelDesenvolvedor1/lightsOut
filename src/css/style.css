@@ -194,6 +194,8 @@ header img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+
     /* opacity: .5; */
 }
 
@@ -206,7 +208,7 @@ header img{
 }
 
 .content .title{
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     font-family: var(--titulo);
     font-size: 4.5rem;
     line-height: 0.8;
