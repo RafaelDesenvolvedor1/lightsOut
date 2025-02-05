@@ -1,0 +1,459 @@
+/* importando fontes  */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* configurações  */
+
+:root{
+
+    /* fontes utilizadas  */
+    --titulo: "Nanum Brush Script", serif;
+    --conteudo: "Poppins", serif;
+
+    /* cores da página  */
+    --contentColor: #fff;
+    --overlay: rgba(0,0,0, 0.7);
+    --bgCard: #262424;
+
+    /* margem de respiro  */
+    --respiro:5rem;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: var(--conteudo);
+    color: var(--contentColor);
+}
+
+
+body{
+    min-height: 100dvh;
+
+    background-image: url(../assets/img/light.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15% 1fr 1fr;
+    grid-template-areas:
+    "header content" 
+    "controls content" 
+    "controls content" ;
+
+}
+
+header{
+    width: 100%;
+    /* height: 100px; */
+    background-color: transparent;
+    padding: 3rem 0;
+
+    position: relative;
+    z-index: 1;
+
+   grid-area: header;
+}
+
+header img{
+    height: 120px;
+    margin-left: var(--respiro);
+}
+
+.out{
+    background-image: url(../assets/img/out.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    transition: 1s;
+}
+
+.out.active{
+    opacity: 0;
+}
+
+
+.controls{
+    /* background-color: red; */
+    grid-area: controls;
+    position: relative;
+    color:var(--contentColor);
+
+    display: flex;
+    padding-left: var(--respiro);
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.controls .btnSwichContainer{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    /* margin-top: 550px */
+    bottom: 0;
+    margin-bottom: 100px;  
+    gap: 8px; 
+   
+}
+
+.btnSwichContainer::after{
+    content: 'OFF';
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    
+}
+
+.btnSwitch{
+    width: 80px;
+    height: 40px;
+    background-color: transparent;
+    border: 8px solid #fff;
+    border-radius: 200px;
+    position: relative;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    
+}
+
+.btnSwitch::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+
+    margin: 2px;
+
+    left: 0;
+
+    transition: ease-in-out .5s;
+
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~* .btnSwitch{
+    background-color: #fff;
+}
+
+#check:checked ~* .btnSwitch::before{
+    filter: invert(1);
+    transform: translateX(40px);
+    
+}
+#check:checked ~* .btnSwichContainer::after{
+   content: 'on';
+    
+}
+
+
+
+
+
+.controls .scm{
+    list-style: none;
+}
+
+.scm li{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content{
+    grid-area: content;
+    position: relative;
+    background-color: var(--overlay);
+    padding: 0 var(--respiro);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* opacity: .5; */
+}
+
+.content .btnSwichContainer{
+    display: none;
+}
+
+.content .btnSwichContainer::after{
+    display: none ;
+}
+
+.content .title{
+    margin-top: 3rem;
+    font-family: var(--titulo);
+    font-size: 4.5rem;
+    line-height: 0.8;
+    font-weight: 400;
+}
+
+.content p{
+    font-size: .7rem;
+    line-height: 1.8;
+    font-style: italic;
+    font-weight: 100;
+
+    margin-top: 1rem;
+}
+
+.btn{
+    background: transparent;
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    align-self: flex-start;
+
+    
+
+
+}
+
+.btn i{
+    font-size: 2rem;
+}
+
+.modal-header{
+    border:0;
+    color: var(--contentColor);
+}
+
+.btn-close{
+    filter: invert(1);
+}
+
+.modal-content{
+    background-color: transparent;
+}
+
+iframe{
+    width: 100%;
+    height: 100vh;
+}
+
+.castContainer{
+    max-width: 600px;
+    /* background-color: red; */
+    margin-top: 1rem;
+}
+
+.castContainer::before{
+    content:'Elenco';
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--contentColor);
+    letter-spacing: 4px;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+    padding-bottom: .3rem;
+}
+
+.card{
+    /* background-color: var(--bgCard); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding-top: 1rem;
+
+    user-select: none;
+
+    min-height: 210px;
+
+   
+}
+
+.card .thumb{
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+.card-title{
+    font-size: .8rem;
+    /* color: var(--contentColor); */
+}
+
+.swiper-pagination{
+    position: relative;
+    filter: invert(1);
+}
+
+.swiper-pagination-bullet-active{
+    background-color:#000 ;
+}
+
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: .3rem;
+    margin-left: .3rem;
+}
+
+footer .signature{
+    font-size: .5rem;
+    font-weight: 100;
+}
+
+
+@media(width <= 1024px){
+
+    /* body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 15% 1fr;
+        grid-template-areas:
+        "header" 
+        "controls" 
+        "content" ;
+
+        background-image: url(../assets/img/lightMobile.jpg);
+        background-size: cover;
+    } */
+
+    :root{
+        --respiro: 1rem;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+    
+        
+        overflow: visible;
+
+        background-image: url(../assets/img/lightMobile.jpg);
+        background-size: cover;
+    }
+
+    header{
+        background-color: var(--overlay);
+        padding: 1.5rem var(--respiro);
+    }
+
+    .box{
+        flex:1;
+    }
+
+
+    .content .btnSwichContainer{
+        display: flex;
+        align-items: center;
+        align-self: flex-start;
+        gap: 8px;
+        transform: scale(0.7);
+        
+    }
+
+    .content .btnSwichContainer::after{
+        display: inline-block;
+    }
+
+    header img{
+        height: 80px;
+       
+    }
+
+    .content{
+        display: none;
+        padding-bottom: 4rem;
+
+    }
+
+    .content .title{
+        margin-top: 1rem;
+    }
+
+    .castContainer{
+        max-width: 100%;
+    }
+
+    /* .content .title{
+        font-size: 3rem;
+    } */
+
+    .controls{
+        padding:0;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+    }
+
+   .controls .btnSwichContainer{
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+    .out{
+        background-image: url(../assets/img/outMobile.jpg);
+    }
+
+     .controls.active{
+        display: none;
+    }
+
+    .content.active{
+        display: flex;
+    }
+
+    .card{
+        width: 100% !important;
+    }
+
+
+    .scm{
+        display: flex;
+        gap: 1rem;
+        margin: 3rem 0;
+    }
+
+
+}
+
+@media(width <= 400px){
+   .content .title{
+        font-size: 3rem !important;
+    }
+}

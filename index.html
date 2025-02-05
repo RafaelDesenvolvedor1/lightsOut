@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstap cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Swiper cdn  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+      integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <title>LightsOut - Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./src/assets/img/Lights_Out_Movie_Logo_Branco.svg"
+        alt=""
+        srcset=""
+      />
+    </header>
+
+    <div class="out"></div>
+
+    <input type="checkbox" name="" id="check" />
+
+
+    <section class="box controls">
+      <ul class="scm">
+        <li><a href="https://www.linkedin.com/in/rafael-santos-06b5a719a/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61561935068955" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="https://www.instagram.com/rafasantossalgado/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+
+
+      <div class="btnSwichContainer">
+        <label for="check" class="btnSwitch" id="switchBtn"></label>
+      </div>
+
+      <footer><span class="signature">Desenvolvido por <strong>&copy; Rafael Santos Salgado</strong></span></footer>
+    </section>
+    <section class="box content">
+  
+      <div class="btnSwichContainer">
+        <label for="check" class="btnSwitch"  id="switchBtnMobile"></label>
+      </div>
+      <div class="contentText">
+        <h1 class="title">You were right to be afraid of the dark</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sem nunc,
+          porttitor ut dictum sit amet, aliquet laoreet dui. Donec quis
+          fermentum risus. Curabitur venenatis augue non nulla cursus, non
+          hendrerit odio ultricies. Nullam aliquam, nibh fermentum pellentesque
+          iaculis, mi sem lobortis ante, mattis tincidunt tortor urna non purus.
+        </p>
+      </div>
+
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-dark"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        <i class="fa-regular fa-circle-play"></i> Watch Trailer
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal modal-xl fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <iframe src="https://www.youtube.com/embed/6LiKKFZyhRU"> </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="castContainer">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="card text-bg-dark mb-3" style="width: 8rem">
+                <div class="thumb">
+                  <img
+                    src="./src/assets/elenco/Teresa.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+
+                <div class="card-body">
+                  <strong class="card-title">Teresa Palmer</strong>
+                  <p class="card-text">Rebecca</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-bg-dark mb-3" style="width: 8rem">
+                <div class="thumb">
+                  <img
+                    src="./src/assets/elenco/Gabriel.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <strong class="card-title">Gabriel Bateman</strong>
+                  <p class="card-text">Martin</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-bg-dark mb-3" style="width: 8rem">
+                <div class="thumb">
+                  <img
+                    src="./src/assets/elenco/Maria.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <strong class="card-title">Maria Bello</strong>
+                  <p class="card-text">Sophie</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-bg-dark mb-3" style="width: 8rem">
+                <div class="thumb">
+                  <img
+                    src="./src/assets/elenco/Lotta.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <strong class="card-title">Lotta Losten</strong>
+                  <p class="card-text">Esther</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-bg-dark mb-3" style="width: 8rem">
+                <div class="thumb">
+                  <img
+                    src="./src/assets/elenco/Alexander.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <strong class="card-title">Alexander DiPersia</strong>
+                  <p class="card-text">Bret</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-bg-dark mb-3" style="width: 8rem">
+                <div class="thumb">
+                  <img
+                    src="./src/assets/elenco/Alicia.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <strong class="card-title">Alicia Vela-Bailey</strong>
+                  <p class="card-text">Diana</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-bg-dark mb-3" style="width: 8rem">
+                <div class="thumb">
+                  <img
+                    src="./src/assets/elenco/Billy.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <strong class="card-title">Billy Burke</strong>
+                  <p class="card-text">Paul</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-bg-dark mb-3" style="width: 8rem">
+                <div class="thumb">
+                  <img
+                    src="./src/assets/elenco/Emily.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <strong class="card-title">Emily Alyn Lind</strong>
+                  <p class="card-text">Sophie</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-bg-dark mb-3" style="width: 8rem">
+                <div class="thumb">
+                  <img
+                    src="./src/assets/elenco/Andi.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <strong class="card-title">Andi Osho</strong>
+                  <p class="card-text">Emma</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-bg-dark mb-3" style="width: 8rem">
+                <div class="thumb">
+                  <img
+                    src="./src/assets/elenco/Maria Russel.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <strong class="card-title">Maria Russell</strong>
+                  <p class="card-text">Officer Gomez</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-bg-dark mb-3" style="width: 8rem">
+                <div class="thumb">
+                  <img
+                    src="./src/assets/elenco/Elizabeth.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <strong class="card-title">Elizabeth Pan</strong>
+                  <p class="card-text">Nurse</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-bg-dark mb-3" style="width: 8rem">
+                <div class="thumb">
+                  <img
+                    src="./src/assets/elenco/Amiah.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <strong class="card-title">Amiah Miller</strong>
+                  <p class="card-text">Rebecca</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-bg-dark mb-3" style="width: 8rem">
+                <div class="thumb">
+                  <img
+                    src="./src/assets/elenco/Ava.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <strong class="card-title">Ava Cantarell</strong>
+                  <p class="card-text">Diana</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-bg-dark mb-3" style="width: 8rem">
+                <div class="thumb">
+                  <img
+                    src="./src/assets/elenco/Rolando.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <strong class="card-title">Rolando Boyce</strong>
+                  <p class="card-text">Officer Brian Andrews</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card text-bg-dark mb-3" style="width: 8rem">
+                <div class="thumb">
+                  <img
+                    src="./src/assets/elenco/Ariel.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <strong class="card-title">Ariel Duplin</strong>
+                  <p class="card-text">Diana</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      
+    </section>
+
+  
+
+    
+
+    <!-- Bootstap js  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper js cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Swiper config  -->
+    <script src="./src/js/swiper.js"></script>
+
+    <!-- Switch Button Action  -->
+    <script src="./src/js/switchBtnAction.js"></script>
+
+  </body>
+</html>
