@@ -1,6 +1,6 @@
 # Lights Out (2016) - Landing Page
 
-![Lights Out](https:layout/page1.pdf)
+![Lights Out](./layout/page1.pdf)
 
 ## ✨ Sobre o Projeto
 Esta é uma landing page inspirada no filme *Lights Out* (2016). O layout foi baseado em uma landing page do filme *Coringa* criada pelo canal "Online Tutoriais" no YouTube. Você pode conferir o canal [aqui](https://www.youtube.com/c/OnlineTutoriais).
