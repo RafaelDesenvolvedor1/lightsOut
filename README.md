@@ -18,7 +18,7 @@ Este foi meu primeiro projeto utilizando um filme como tema, e explorei efeitos 
 ## 💌 Contato
 Caso queira entrar em contato ou ver mais dos meus projetos:
 - **GitHub**: <a href="https://github.com/RafaelDesenvolvedor1" target="blank"> Rafael Desenvolvedor1 </a>
-- **LinkedIn**: <a href="www.linkedin.com/in/rafael-santos-06b5a719a" target="blank"> Rafael Santos </a>
+- **LinkedIn**: <a href="[www.linkedin.com/in/rafael-santos-06b5a719a](https://www.linkedin.com/in/rafael-santos-06b5a719a/?trk=li_LOL_SPIN_global_careers_jobsgtm_conv_acq_july2022_spinv1)" target="blank"> Rafael Santos </a>
 
 Sinta-se à vontade para sugerir melhorias ou contribuir com o projeto! 💛
 
