@@ -15,17 +15,10 @@ Este foi meu primeiro projeto utilizando um filme como tema, e explorei efeitos 
 - **Design Responsivo**: Compatível com diferentes tamanhos de tela.
 - **Interatividade com Modal e Cards**: Apresentando detalhes sobre o filme e os personagens.
 
-## 🛠️ Como Executar o Projeto
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/seuusuario/nome-do-repositorio.git
-   ```
-2. Abra o arquivo `index.html` no navegador.
-
 ## 💌 Contato
 Caso queira entrar em contato ou ver mais dos meus projetos:
-- **GitHub**: [SeuPerfil](https://github.com/seuusuario)
-- **LinkedIn**: [SeuPerfil](https://linkedin.com/in/seuperfil)
+- **GitHub**: [SeuPerfil](https://github.com/seuusuario](https://github.com/RafaelDesenvolvedor1))
+- **LinkedIn**: [SeuPerfil]((https://www.linkedin.com/in/rafael-santos-06b5a719a/?trk=li_LOL_SPIN_global_careers_jobsgtm_conv_acq_july2022_spinv1))
 
 Sinta-se à vontade para sugerir melhorias ou contribuir com o projeto! 💛
 
